@@ -1,0 +1,17 @@
+﻿@model List<Student>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Students List</title>
+</head>
+<body>
+    <h1>Students List</h1>
+    <ul>
+        @foreach (var student in Model)
+        {
+            <li>@student.Name - @student.Age</li>
+        }
+    </ul>
+</body>
+</html>
